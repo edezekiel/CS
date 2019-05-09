@@ -4,6 +4,6 @@ describe('Array', function() {
   it('should start empty', function() {
     var arr = [];
 
-    assert.equal(arr.length, 0);
+    assert.equal(arr.length, 0, 'Array lenght was not 0');
   });
 });
