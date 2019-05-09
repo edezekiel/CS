@@ -1,0 +1,19 @@
+{
+  "name": "cs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ArrayString.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edezekiel/CS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edezekiel/CS/issues"
+  },
+  "homepage": "https://github.com/edezekiel/CS#readme"
+}
