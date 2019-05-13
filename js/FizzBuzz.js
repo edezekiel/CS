@@ -1,5 +1,6 @@
 console.log("FizzBuzz")
 
+// solution to Silicon West FizzBuzz problem 
 const FizzBuzz = number => {
   for (let i = number; i > 0; i--) {
     if ((i % 2 === 0) && (i % 3 === 0)) {
