@@ -14,6 +14,6 @@ describe("Fizz Buzz", () => {
   });
 
   it("Should output Fizz Buzz", () => {
-    assert.equal(output[3], "FizzBuzz");
+    assert.equal(output[5], "FizzBuzz");
   });
 })

@@ -1,14 +1,19 @@
 console.log("FizzBuzz")
 
-// solution to Silicon West FizzBuzz problem 
+// solution to Silicon West FizzBuzz problem
 const FizzBuzz = number => {
-  for (let i = number; i > 0; i--) {
+  let output = [];
+
+  for (let i = 1; i <= number; i++) {
     if ((i % 2 === 0) && (i % 3 === 0)) {
-      console.log("FizzBuzz", i)
+      output.push("FizzBuzz")
     } else if ((i % 2 === 0) && !(i % 3 === 0)) {
-      console.log("Fizz", i)
+      output.push("Fizz")
+    } else if (i % 3 === 0) {
+      output.push("Buzz")
     } else {
-      console.log("Buzz", i)
+      output.push(i)
     }
   }
+  return output
 }
