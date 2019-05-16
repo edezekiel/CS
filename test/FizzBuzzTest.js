@@ -1,3 +1,5 @@
+var assert = chai.assert;
+
 describe("Fizz Buzz", () => {
   beforeEach(() => (output = FizzBuzz(30)));
 

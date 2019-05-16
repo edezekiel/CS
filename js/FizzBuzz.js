@@ -1,5 +1,3 @@
-console.log("FizzBuzz")
-
 // solution to Silicon West FizzBuzz problem
 const FizzBuzz = number => {
   let output = [];
