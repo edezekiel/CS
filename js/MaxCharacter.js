@@ -1,15 +1,25 @@
 // solution to Silicon West Max Character problem
 
-const MaxCharacter = string => {
-  let splitString = string.split("")
-  maxCharacter = null
-  // iterate over each character in the split string
-  sortedString = splitString.sort()
+const max = string => {
+  // create empty object literal
+  const characters = {};
 
-  // count how many times character appears in the string
+  // First loop, over string - character are keys and counters are values
+  for (let character of string) {
+    characters[character] = characters[character] + 1 || 1;
+  }
 
-  // if count is higher, mark that character as highest
+  // set maxCount and maxCharacter variables
+  let maxCount = 0;
+  let maxCharacter = null;
 
-  // return character with highest count
-  return sortedString
+  // Second loop, over character object
+  for (let character in characters) {
+    if (characters[character] > maxCount) {
+      maxCount = characters[character];
+      maxCharacter = character
+    }
+  }
+
+  return maxCharacter
 }
