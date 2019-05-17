@@ -1,22 +1,17 @@
 const Anagrams = (first, second) => {
-  // count number of characters in first string
   let countOne = 0;
   let countTwo = 0;
 
+  // count number of characters in first string
   for (character in first) {
+    console.log(character, countOne)
     countOne++
   }
 
+  // count number of characters in second string
   for (character in second) {
     countTwo++
   }
 
-  if (countOne === countTwo) {
-    console.log(countOne, countTwo, true)
-    return true
-  } else {
-    console.log(countOne, countTwo, false)
-    return false
-  }
-  // count number of characters in second string
+  return (countOne === countTwo ? true : false);
 }
