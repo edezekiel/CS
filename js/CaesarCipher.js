@@ -1,12 +1,11 @@
 const CaesarCipher = (string, number) => {
-  // create hash table and reverse lookup table
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   const input = string.toLowerCase();
   let output = "";
 
   for (let i = 0; i < input.length; i++) {
     const letter = input[i];
-
+    debugger
     if (alphabet.indexOf(letter) === -1) {
       output += letter;
       continue;
