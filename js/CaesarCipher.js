@@ -5,7 +5,6 @@ const CaesarCipher = (string, number) => {
 
   for (let i = 0; i < input.length; i++) {
     const letter = input[i];
-    debugger
     if (alphabet.indexOf(letter) === -1) {
       output += letter;
       continue;
